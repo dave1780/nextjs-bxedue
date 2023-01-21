@@ -1,10 +1,10 @@
 import '../styles/globals.css'
-
+import Navbar from './Navbar'
 function MyApp({ Component, pageProps }) {
   
   return(
     <>
-    <h1>my app component </h1>
+    <Navbar/>
   <Component {...pageProps} />
   </>
   )
