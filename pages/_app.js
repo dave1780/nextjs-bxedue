@@ -1,8 +1,13 @@
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
-  <h1>My app component</h1>
-  return <Component {...pageProps} />
+  
+  return(
+    <>
+    <h1>my app component </h1>
+  <Component {...pageProps} />
+  </>
+  )
 }
 
 export default MyApp;
