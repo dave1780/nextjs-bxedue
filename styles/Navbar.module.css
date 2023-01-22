@@ -1,9 +1,13 @@
 .nav{
-  background-image:linear-gradient(to right,pink,hotpink);
   display: flex;
   text-decoration: none;
   justify-content: space-between;
   list-style: none;
-  margin-top: 10px ;
   margin-bottom: 10px;
+}
+.header{
+  line-height: 60px ;
+  height: 60px;
+  width: 100%;
+  background-image: linear-gradient(to right,pink hotpink);
 }
