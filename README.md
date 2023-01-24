@@ -1,3 +1,3 @@
-# nextjs-bxedue
+# myApp.md
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/nextjs-bxedue)
