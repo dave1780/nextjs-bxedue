@@ -10,6 +10,7 @@ return(
 <a href="/Components/FAQ" className="faq">FAQ</a>
   </nav>
   </header>
+  <h1>shisiss</h1>
   </>
 )
 }
