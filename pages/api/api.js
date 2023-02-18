@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import * as fs from "fs";
 import {MongoClient,ServerApiVersion} from "mongodb"
-const uri = "mongo+srv://Dave150:dave90@cluster1.xu4paq5.mongodb.net/?retrywrites=true&w=majority";
+const uri = "mongodb+srv://Dave150:dave90@cluster1.xu4paq5.mongodb.net/?retrywrites=true&w=majority";
 const client = new MongoClient(uri,{
   usNewUrlParser:true,
   useUnifiedTopology:true
