@@ -3,7 +3,7 @@ import * as fs from "fs";
 import {MongoClient,ServerApiVersion} from "mongodb"
 const uri = "mongodb+srv://Dave150:dave90@cluster1.xu4paq5.mongodb.net/?retrywrites=true&w=majority";
 const client = new MongoClient(uri,{
-  usNewUrlParser:true,
+  useNewUrlParser:true,
   useUnifiedTopology:true
 });
 client.connect(err =>{
