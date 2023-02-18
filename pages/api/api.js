@@ -8,7 +8,9 @@ const client = new MongoClient(uri,{
 });
 client.connect(err =>{
   const collection = client.db("test").collection("devices");
+  console.log("connected")
   client.close();
+
 })
 client.once('open',()=>{
   console.log("connected o mongodb")
