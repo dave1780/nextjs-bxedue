@@ -5,4 +5,5 @@ export default (req, res) => {
   fs.readFile("../../Blogs.json",(error,data )=>{
     console.log(data)
   })
+  res.status(200).json({name:"dave parker"})
 };
