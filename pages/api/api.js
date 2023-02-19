@@ -12,7 +12,7 @@ client.connect(err =>{
   client.close();
 
 })
-client.once('open',()=>{
+clientConnected.connection('open',()=>{
   console.log("connected o mongodb")
 })
 export default (req, res) => {
