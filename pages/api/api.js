@@ -12,7 +12,8 @@ client.connect(err =>{
   client.close();
 
 })
-clientConnected.connection('open',()=>{
+const clientConnected = client.connection;
+clientConnected.once('open',()=>{
   console.log("connected o mongodb")
 })
 export default (req, res) => {
