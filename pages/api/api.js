@@ -1,19 +1,17 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import {MongoClient,ServerApiVersion} from "mongodb"
-const uri = "mongodb+srv://Dave150:dave90@cluster1.xu4paq5.mongodb.net/?retrywrites=true&w=majority";
-const client = new MongoClient(uri,{
-  useNewUrlParser:true,
-  useUnifiedTopology:true
-});
-client.connect(err =>{
-  const collection = client.db("test").collection("devices");
-  console.log("connected")
-  client.close();
+const mongoose = require('mongoose');
+require('dotenv').config();
+const uri = process.env.uri;
+mongoose
+  .connect(uri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log('connected to database');
+  })
+  .catch(() => {
+    console.log(' error occured');
+  });
 
-})
-const clientConnected = client.connection;
-clientConnected.once('open',()=>{
-  console.log("connected o mongodb")
-})
-
-  // Open Chrome DevTools to step through the debugger!
+// Open Chrome DevTools to step through the debugger!
