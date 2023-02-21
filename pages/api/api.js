@@ -30,6 +30,7 @@ const newUserCreation = async () => {
       age: 40,
     });
     const result = await newUser.save();
+    console.log(result)
   } catch (err) {
     console.log(err);
   }
