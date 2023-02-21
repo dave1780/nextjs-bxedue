@@ -1,6 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 const mongoose = require('mongoose');
 require('dotenv').config();
+mongoose.set("strictQuery",false);
 const uri = process.env.uri;
 mongoose
   .connect(uri, {
