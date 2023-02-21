@@ -29,6 +29,10 @@ const newUserCreation = async () => {
       name: 'Dave parker',
       age: 40,
     });
+    const valid = collection.InsertOne(newUser);
+    if(valid){
+      collection.InsertOne(newUser)
+    }
     const result = await newUser.save();
     console.log(result)
   } catch (err) {
