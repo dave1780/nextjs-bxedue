@@ -6,7 +6,6 @@ const uri = process.env.uri;
 mongoose
   .connect(uri, {
     useNewUrlParser: true,
-    useFindAndModify: true,
     useUnifiedTopology: true,
   })
   .then(() => {
