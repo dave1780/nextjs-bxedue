@@ -41,8 +41,10 @@ const newUserCreation = async () => {
 
 const http = require("http")
 const url = require("url")
+
 const server=http.createServer((req,res)=>{
-  if(req.url==='/about'){
+  const Url =url.parse(req.url).pathname
+  if(req.Url==='/about'){
     res.end("you are in about page")
   }
 server.listen(3000,()=>{
