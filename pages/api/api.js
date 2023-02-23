@@ -36,3 +36,15 @@ const newUserCreation = async () => {
     console.log(err);
   }
 };
+
+// http server
+
+const http = require("http")
+const server=http.createServer((req,res)=>{
+  if(req.url==='/api/about'){
+    res.end("you are in about page")
+  }
+})
+server.listen(3000,()=>{
+  console.log("i am about")
+})
