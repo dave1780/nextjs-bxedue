@@ -1,3 +1,4 @@
+import "../styles/user.css"
 const newUser = () => {
   return (
     <>
