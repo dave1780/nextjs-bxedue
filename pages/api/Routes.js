@@ -1,11 +1,12 @@
 const express =require("express");
 const Router= express.Router();
-Router.get("/",(req,res,next)=>{
+const homePage = Router.get("/",(req,res,next)=>{
   res.end("you are on home page")
   next();
 });
 
-const homePage= Router.get("/about",(req,res)=>{
+const aboutPage= Router.get("/about",(req,res,next)=>{
   res.end("you are on about page")
+  next();
 })
-module.exports = homePage;
+module.exports = Router;;
