@@ -6,4 +6,5 @@ const userSchema= new mongoose.Schema({
   confirm_Password:{type:String,required:true}
 })
 
-const userList = new 
+const userList = new mongoose.Model("userLists",userSchema)
+module.exports= userList;
