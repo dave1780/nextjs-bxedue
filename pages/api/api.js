@@ -48,4 +48,5 @@ const server=http.createServer((req,res)=>{
     res.end("you are in about page")
   }
 server.listen(3000,()=>{
-  con
+  console.log("listening on port 3000")
+};
